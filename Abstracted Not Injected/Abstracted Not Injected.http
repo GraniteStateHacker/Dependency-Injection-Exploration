@@ -1,0 +1,6 @@
+@Abstracted_Not_Injected_HostAddress = http://localhost:5226
+
+GET {{Abstracted_Not_Injected_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

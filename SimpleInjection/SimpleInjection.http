@@ -1,0 +1,6 @@
+@SimpleInjection_HostAddress = http://localhost:5212
+
+GET {{SimpleInjection_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

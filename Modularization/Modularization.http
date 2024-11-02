@@ -1,0 +1,6 @@
+@Modularization_HostAddress = http://localhost:5157
+
+GET {{Modularization_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
