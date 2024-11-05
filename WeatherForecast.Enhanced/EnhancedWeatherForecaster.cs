@@ -30,4 +30,6 @@ public class EnhancedWeatherForecaster : IWeatherForecaster
             return forecast;
         });
     }
+
+    public Models.WeatherForecast[] ForecastForZipCode(string Zipcode) => Forecast();
 }

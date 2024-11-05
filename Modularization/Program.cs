@@ -10,9 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IWeatherForecaster, EnhancedWeatherForecaster>();
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDistributedMemoryCache();
+    builder.Services.AddScoped<IWeatherForecaster, EnhancedWeatherForecaster>();
+}
+else
+{
+    builder.Services.AddScoped<IWeatherForecaster, WeatherForecaster>();
+}
 
-builder.Services.AddDistributedMemoryCache();
+
 
 var app = builder.Build();
 
@@ -28,5 +36,7 @@ app.UseHttpsRedirection();
 app.MapGet("/weatherforecast", ([FromServices] IWeatherForecaster forecaster) => forecaster.Forecast())
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapGet("/weatherforecast/{zipcode}", ([FromServices] IWeatherForecaster forecaster, string zipcode) => forecaster.ForecastForZipCode(zipcode));
 
 app.Run();

@@ -23,4 +23,7 @@ public class WeatherForecaster : IWeatherForecaster
             .ToArray();
         return forecast;
     }
+
+    public Models.WeatherForecast[] ForecastForZipCode(string Zipcode) => Forecast();
+    
 }

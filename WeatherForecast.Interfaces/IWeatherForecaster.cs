@@ -2,5 +2,8 @@
 
 public interface IWeatherForecaster
 {
-    public Models.WeatherForecast[] Forecast();
+    Models.WeatherForecast[] Forecast();
+
+    Models.WeatherForecast[] ForecastForZipCode(string Zipcode);
+
 }
