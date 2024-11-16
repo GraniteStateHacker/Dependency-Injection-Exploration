@@ -19,12 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Modularization", "4. Mod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modularization", "Modularization\Modularization.csproj", "{A9BC9CAB-04E2-4609-BC80-B48104D2B348}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Common", "WeatherForecast.Common\WeatherForecast.Common.csproj", "{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Interfaces", "WeatherForecast.Interfaces\WeatherForecast.Interfaces.csproj", "{9E7F8547-9C07-4E70-83A5-4396C57A5132}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Models", "WeatherForecast.Models\WeatherForecast.Models.csproj", "{EC5B000A-6292-4EB6-9036-14713858F656}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherForecast.Abstractions", "WeatherForecast.Abstractions", "{181F9EA4-15BE-4033-B9AC-AA0FDF4761BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherForecast.ClassicImplementation", "WeatherForecast.ClassicImplementation", "{B280D885-EDCE-4D49-A652-6F336FDC4860}"
@@ -34,6 +28,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherForecast.EnhancedImplementation", "WeatherForecast.EnhancedImplementation", "{B27545F6-E55F-4447-B958-1939D16002DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Enhanced", "WeatherForecast.Enhanced\WeatherForecast.Enhanced.csproj", "{AF77149B-3898-4E52-9C47-CDBE0C59B555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Abstractions", "WeatherForecast.Abstractions\WeatherForecast.Abstractions.csproj", "{178EA556-AA90-4DBF-9FDE-D32DF0F206E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,18 +53,6 @@ Global
 		{A9BC9CAB-04E2-4609-BC80-B48104D2B348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BC9CAB-04E2-4609-BC80-B48104D2B348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9BC9CAB-04E2-4609-BC80-B48104D2B348}.Release|Any CPU.Build.0 = Release|Any CPU
-		{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E7F8547-9C07-4E70-83A5-4396C57A5132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E7F8547-9C07-4E70-83A5-4396C57A5132}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E7F8547-9C07-4E70-83A5-4396C57A5132}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E7F8547-9C07-4E70-83A5-4396C57A5132}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC5B000A-6292-4EB6-9036-14713858F656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC5B000A-6292-4EB6-9036-14713858F656}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC5B000A-6292-4EB6-9036-14713858F656}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC5B000A-6292-4EB6-9036-14713858F656}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F5CA10C-E6A5-4F0A-AE62-A556A34E43F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F5CA10C-E6A5-4F0A-AE62-A556A34E43F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F5CA10C-E6A5-4F0A-AE62-A556A34E43F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,6 +61,10 @@ Global
 		{AF77149B-3898-4E52-9C47-CDBE0C59B555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF77149B-3898-4E52-9C47-CDBE0C59B555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF77149B-3898-4E52-9C47-CDBE0C59B555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178EA556-AA90-4DBF-9FDE-D32DF0F206E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178EA556-AA90-4DBF-9FDE-D32DF0F206E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178EA556-AA90-4DBF-9FDE-D32DF0F206E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178EA556-AA90-4DBF-9FDE-D32DF0F206E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,11 +74,9 @@ Global
 		{744E6FA8-F7E9-40FF-92A4-F66E0C979635} = {07C60496-0B9A-4F55-A319-4A5090C5BAEC}
 		{32B3D542-E3DF-49AF-919C-DD033F01356E} = {FC0A3DCC-8142-42B6-9614-047757EBD793}
 		{A9BC9CAB-04E2-4609-BC80-B48104D2B348} = {23DEB442-80B7-4EF6-988A-CB14231246CB}
-		{198D9E90-B32A-4B45-AFC5-26D94CF2A1F3} = {181F9EA4-15BE-4033-B9AC-AA0FDF4761BF}
-		{9E7F8547-9C07-4E70-83A5-4396C57A5132} = {181F9EA4-15BE-4033-B9AC-AA0FDF4761BF}
-		{EC5B000A-6292-4EB6-9036-14713858F656} = {181F9EA4-15BE-4033-B9AC-AA0FDF4761BF}
 		{8F5CA10C-E6A5-4F0A-AE62-A556A34E43F8} = {B280D885-EDCE-4D49-A652-6F336FDC4860}
 		{AF77149B-3898-4E52-9C47-CDBE0C59B555} = {B27545F6-E55F-4447-B958-1939D16002DA}
+		{178EA556-AA90-4DBF-9FDE-D32DF0F206E2} = {181F9EA4-15BE-4033-B9AC-AA0FDF4761BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8B1BF0D-4C9F-49BD-8952-C8D2F17F8187}

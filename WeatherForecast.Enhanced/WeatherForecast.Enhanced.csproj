@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WeatherForecast.Common\WeatherForecast.Common.csproj" />
-    <ProjectReference Include="..\WeatherForecast.Interfaces\WeatherForecast.Interfaces.csproj" />
-    <ProjectReference Include="..\WeatherForecast.Models\WeatherForecast.Models.csproj" />
+    <ProjectReference Include="..\WeatherForecast.Abstractions\WeatherForecast.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

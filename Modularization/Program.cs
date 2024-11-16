@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using WeatherForecast.Abstractions.Interfaces;
 using WeatherForecast.Classic;
 using WeatherForecast.Enhanced;
-using WeatherForecast.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

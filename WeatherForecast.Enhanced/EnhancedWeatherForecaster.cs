@@ -1,7 +1,6 @@
-﻿using WeatherForecast.Interfaces;
-using WeatherForecast.Common;
-using Microsoft.Extensions.Caching.Distributed;
-using System.Text.Json;
+﻿using Microsoft.Extensions.Caching.Distributed;
+using WeatherForecast.Abstractions.Interfaces;
+using WeatherForecast.Abstractions.Common;
 
 namespace WeatherForecast.Enhanced;
 
@@ -14,12 +13,12 @@ public class EnhancedWeatherForecaster : IWeatherForecaster
         _cache = cache;
     }
 
-    public Models.WeatherForecast[] Forecast()
+    public Abstractions.Models.WeatherForecast[] Forecast()
     {
         return _cache.Cache("forecast", () =>
         {
             var forecast = Enumerable.Range(1, 5).Select(index =>
-                new Models.WeatherForecast
+                new Abstractions.Models.WeatherForecast
                 (
                     DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                     Random.Shared.Next(-20, 55),
@@ -31,5 +30,5 @@ public class EnhancedWeatherForecaster : IWeatherForecaster
         });
     }
 
-    public Models.WeatherForecast[] ForecastForZipCode(string Zipcode) => Forecast();
+    public Abstractions.Models.WeatherForecast[] ForecastForZipCode(string Zipcode) => Forecast();
 }

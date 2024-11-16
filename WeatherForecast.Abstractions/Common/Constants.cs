@@ -1,4 +1,4 @@
-﻿namespace WeatherForecast.Common;
+﻿namespace WeatherForecast.Abstractions.Common;
 
 public class Constants
 {

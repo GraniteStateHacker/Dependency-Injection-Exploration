@@ -1,4 +1,4 @@
-﻿namespace WeatherForecast.Models;
+﻿namespace WeatherForecast.Abstractions.Models;
 
 public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
